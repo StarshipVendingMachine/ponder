@@ -222,6 +222,9 @@ if (WIN32 AND CMAKE_COMPILER_IS_GNUCXX)
     endif()
 endif()
 
+# disable warning by blazeq
+target_compile_options(ponder PUBLIC -Wno-undefined-var-template)
+
 # add the test subdirectory, but do not build it by default
 if(BUILD_TEST)
     enable_testing()
