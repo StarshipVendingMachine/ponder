@@ -45,7 +45,7 @@ link_directories(
 
 add_executable(egtest ${TEST_SRCS})
 
-target_compile_features(egtest PUBLIC cxx_range_for cxx_variadic_templates) # required
+#target_compile_features(egtest PUBLIC cxx_range_for cxx_variadic_templates) # required
 
 target_link_libraries(egtest ponder)
 

@@ -47,7 +47,7 @@ link_directories(
 
 add_executable(luatest ${TEST_SRCS})
 
-target_compile_features(luatest PUBLIC cxx_range_for cxx_variadic_templates) # required
+#target_compile_features(luatest PUBLIC cxx_range_for cxx_variadic_templates) # required
 
 target_compile_definitions(luatest PUBLIC PONDER_USING_LUA=1)
 
