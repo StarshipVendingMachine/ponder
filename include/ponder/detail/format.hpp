@@ -111,6 +111,7 @@ inline uint32_t clzll(uint64_t x) {
 #ifdef __clang__
 # pragma clang diagnostic push
 # pragma clang diagnostic ignored "-Wdocumentation"
+# pragma clang diagnostic ignored "-Wundefined-var-template"
 #endif
 
 #ifdef __GNUC_LIBSTD__
